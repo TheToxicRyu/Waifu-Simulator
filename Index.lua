@@ -1,10 +1,10 @@
-background = Screen.loadImage(System.currentDirectory().."/GameData/Backgrounds/Title_ScreenTop1.bmp") 
-Screen.flipImage(bitmap2,bitmap)
-Screen.fillRect(50,150,1,15,white,bitmap2)
+background = Screen.loadImage(System.currentDirectory().."/GameData/Backgrounds/Title_TopScreen.bmp") 
+defaultfont = Font.load(System.currentDirectory().."/GameData/Font/Default.ttf")
 
 while true do 
     Screen.waitVblankStart()
 	Screen.refresh()
-	screen.drawImage(10,20,background,TOP_SCREEN) 
+	Screen.drawImage(0,0,background,TOP_SCREEN)
 	Screen.flip()
+	Font.print(defaultfont, 5, 5, "Wafui Simulator Debug Screen!", Color.new(255,255,255), TOP_SCREEN)
 end
