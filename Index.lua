@@ -6,5 +6,5 @@ while true do
 	Screen.refresh()
 	Screen.drawImage(0,0,background,TOP_SCREEN)
 	Screen.flip()
-	Font.print(defaultfont, 5, 5, "Wafui Simulator Debug Screen!", Color.new(255,255,255), TOP_SCREEN)
+	Font.print(defaultfont, 5, 5, "Wafui Simulator Debug Screen!", Color.new(255,255,255), BOTTOM_SCREEN)
 end
